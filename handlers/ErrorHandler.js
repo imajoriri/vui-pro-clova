@@ -4,7 +4,7 @@ exports.ErrorHandler = {
     return true;
   },
   handle: function(handlerInput){
-    var msg = "エラー発生";
+    var msg = "エラーが発生しました。時間を置いてからもう一度お試しください。";
     return handlerInput.responseBuilder.speak(msg).reprompt(msg).getResponse();
   }
 }
